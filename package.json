@@ -42,5 +42,5 @@
     "image-conversion",
     "cli"
   ],
-  "license": "UNLICENSED"
+  "license": "GPL-3.0-only"
 }

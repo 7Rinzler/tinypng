@@ -177,3 +177,8 @@ npm run check
 ```
 
 Automated tests use a fake provider and never call Tinify or spend credits.
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 only. See
+[LICENSE](LICENSE) for the complete terms.
