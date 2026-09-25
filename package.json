@@ -1,0 +1,46 @@
+{
+  "name": "@coding-tech/tinypng",
+  "version": "0.1.0",
+  "description": "Deterministic, safety-first CLI for the Tinify image API",
+  "type": "module",
+  "bin": {
+    "tinypng": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tests/tsconfig.json --noEmit",
+    "lint": "eslint src tests",
+    "test": "vitest run",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "dependencies": {
+    "commander": "14.0.3",
+    "sharp": "0.35.4",
+    "tinify": "1.8.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.3.0",
+    "eslint": "10.11.0",
+    "typescript": "5.9.2",
+    "typescript-eslint": "8.70.1",
+    "vitest": "4.1.11"
+  },
+  "keywords": [
+    "tinify",
+    "tinypng",
+    "image-compression",
+    "image-conversion",
+    "cli"
+  ],
+  "license": "UNLICENSED"
+}
